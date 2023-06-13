@@ -1,0 +1,28 @@
+.mainContent{
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.spacer{
+    height:100px;
+}
+
+.sideBar{
+    width:15vw;
+    border:0;
+    border-right: 1px solid rgba(224, 224, 224, 0.60);
+}
+
+.saleTitle{
+    width:100%;
+}
+.itemSets{
+    width:90vw;
+    padding:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items:start;
+}
+

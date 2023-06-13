@@ -1,0 +1,57 @@
+.mainBackgroundImg {
+  height: 600px;
+  background-image: url('./images/main_bg_img.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.subSection {
+  margin-top: 100px;
+}
+
+.subSectionOneImg {
+  height: 400px;
+  background-image: url("./images/sub_img_one.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.subSectionOneButton {
+  float: right;
+}
+
+.subSectionThreeButton {
+  float: right;
+}
+
+.subSectionItemName {
+  font-size: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-align: right;
+  white-space: pre-wrap;
+}
+
+.subSectionItemDescription {
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: right;
+}
+
+.textTwo {
+  text-align: left;
+}
+
+.subSectionTwoImg {
+  height: 400px;
+  background-image: url("./images/sub_img_two.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.subSectionThreeImg {
+  height: 400px;
+  background-image: url("./images/sub_img_three.jpg");
+  background-position: center;
+  background-size: cover;
+}
