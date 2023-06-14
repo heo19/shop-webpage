@@ -7,9 +7,11 @@ function ItemCard(props) {
   return (
     <div className="itemCard">
       <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={process.env.PUBLIC_URL + props.itemImage} className="itemImage"/>
+        <div className="itemImage">
+          <Card.Img variant="top" src={process.env.PUBLIC_URL + props.itemImage} />
+        </div>
         <Card.Body>
-          <Card.Title>Temp Titie: {props.itemTitle}</Card.Title>
+          <Card.Title>{props.itemTitle}</Card.Title>
           <Card.Text>
             Price: {props.itemPrice}
           </Card.Text>

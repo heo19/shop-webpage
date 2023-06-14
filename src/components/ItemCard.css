@@ -1,3 +1,11 @@
 .itemCard{
     margin:25px;
 }
+
+.itemImage{
+    height:286px;
+    width:286px;
+    background-color: white;
+    display:flex;
+    align-items: end;
+}

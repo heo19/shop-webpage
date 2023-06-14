@@ -18,6 +18,48 @@ let itemData = [
       img: "/images/item2.jpg",
       title : "Grey Yordan",
       price : '$99'
+    },
+
+    {
+      id : 3,
+      img: "/images/shoe3RacerAdapt.png",
+      title : "Racer Adapt 4.0",
+      price : '$49'
+    },
+
+    {
+      id : 4,
+      img: "/images/shoe4QuestarFlow.jpg",
+      title : "Questar Flow",
+      price : '$69'
+    },
+  
+    {
+      id : 5,
+      img: "/images/shoe5X_PLRBOOST.jpg",
+      title : "X_PLRBOOST",
+      price : '$109'
+    },
+
+    {
+      id : 6,
+      img: "/images/shoe6RacerTR21.jpg",
+      title : "Racer TR 21",
+      price : '$89'
+    },
+  
+    {
+      id : 7,
+      img: "/images/shoe7CourtRevival.png",
+      title : "Court Revival",
+      price : '$59'
+    },
+
+    {
+      id : 8,
+      img: "/images/shoe8AdidasSlide.png",
+      title : "Adidas Slide",
+      price : '$39'
     }
   ]
 
