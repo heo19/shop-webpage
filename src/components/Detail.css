@@ -1,3 +1,23 @@
 .spacer{
     height:100px;
 }
+
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infoContainer{
+    margin-left:30px;
+}
+
+.imageContainer{
+    border: 1px solid rgba(114, 114, 114, 0.514);
+}
+
+.orderButton{
+    width: 100%;
+
+    margin-top: 20px;
+}

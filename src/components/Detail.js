@@ -1,12 +1,17 @@
 import React, { useState } from 'react'
 import './Detail.css'
-import Image from 'react-bootstrap/Image';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Card from 'react-bootstrap/Card';
+import Image from 'react-bootstrap/Image'
+import Dropdown from 'react-bootstrap/Dropdown'
+import Card from 'react-bootstrap/Card'
+import Button from 'react-bootstrap/Button'
+import itemData from './data.js'
+import { useParams } from 'react-router-dom'
 
-function Detail(props) {
+function Detail() {
 
     let [size, setSize] = useState("Size");
+    let {id} = useParams();
+    let itemInfo = itemData[id];
 
     return (
         <div>
@@ -14,13 +19,13 @@ function Detail(props) {
 
             <div className="mainContent">
                 <div className="imageContainer">
-                    <Image src="holder.js/100px250" fluid />
+                    <Image src={itemInfo.img} fluid />
                 </div>
                 <div className="infoContainer">
                     <Card style={{ width: '18rem' }}>
                         <Card.Body>
-                            <Card.Title>{props.title}</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">{props.price}</Card.Subtitle>
+                            <Card.Title>{itemInfo.title}</Card.Title>
+                            <Card.Subtitle className="mb-2 text-muted">{itemInfo.price}</Card.Subtitle>
                             <Card.Text>
                                 Select Your Size From Below
                             </Card.Text>
@@ -46,6 +51,10 @@ function Detail(props) {
 
                         </Card.Body>
                     </Card>
+
+                    <Button variant="dark" className="orderButton">Order Now</Button>
+                    <Button variant="secondary" className="orderButton">Add To Cart</Button>
+
                 </div>
             </div>
         </div>

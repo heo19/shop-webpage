@@ -14,9 +14,11 @@ function Sale() {
                     <h2 className="saleTitle">
                         Availables
                     </h2>
-                    {itemData.map((itemInfo)=> {
+                    {itemData.map((itemInfo, index)=> {
                         return(
-                            <ItemCard key={itemInfo.id}
+                            <ItemCard
+                            key ={index}
+                            id ={itemInfo.id}
                             itemImage={itemInfo.img}
                             itemTitle={itemInfo.title}
                             itemPrice={itemInfo.price}

@@ -15,7 +15,7 @@ function ItemCard(props) {
           <Card.Text>
             Price: {props.itemPrice}
           </Card.Text>
-          <Link to="/detail/:id"><Button variant="outline-dark">View More</Button></Link>
+          <Link to={"/detail/" + props.id}><Button variant="outline-dark">View More</Button></Link>
         </Card.Body>
       </Card>
     </div>

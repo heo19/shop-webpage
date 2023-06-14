@@ -18,7 +18,6 @@ function App() {
           <Nav className="me-auto">
             <Link to="/" className='topButton'>Home</Link>
             <Link to="/sale" className='topButton'>Sale</Link>
-            <Link to="/trending" className='topButton'>Trending</Link>
             <Link to="/cart" className='topButton'>Cart</Link>
           </Nav>
         </Container>
