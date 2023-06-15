@@ -27,7 +27,6 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/sale" element={<Sale></Sale>} />
         <Route path="/detail/:id" element={<Detail></Detail>} />
-        <Route path="/trending" element={<div>trending</div>} />
         <Route path="/cart" element={<div>cart</div>} />
       </Routes>
 
