@@ -1,6 +1,7 @@
 import Home from './components/Home'
 import Sale from './components/Sale'
 import Detail from './components/Detail'
+import Cart from './components/Cart'
 
 import { Routes, Route, Link } from 'react-router-dom'
 import { Navbar, Container, Nav } from "react-bootstrap"
@@ -27,7 +28,7 @@ function App() {
         <Route path="/" element={<Home></Home>} />
         <Route path="/sale" element={<Sale></Sale>} />
         <Route path="/detail/:id" element={<Detail></Detail>} />
-        <Route path="/cart" element={<div>cart</div>} />
+        <Route path="/cart" element={<Cart></Cart>} />
       </Routes>
 
     </div>

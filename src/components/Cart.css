@@ -1,0 +1,48 @@
+.mainContentCart{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonGroup{
+    float: right;
+    margin-right: 20px;
+}
+
+.deleteItemCell{
+    width: 130px;
+}
+
+.cartTitle{
+    margin-bottom: 20px;;
+}
+
+.orderNowButtonGroup{
+    float: right;
+    margin-left: auto;
+}
+
+.orderNowButton{
+    width: 130px;
+    margin-left: auto;
+}
+
+.addMoreButton{
+    width: 170px;
+    margin-left: 10px;
+}
+
+.addMoreButtonNoCart{
+    width: 170px;
+    float:right;
+}
+
+.actionContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.totalPrice{
+    margin:0;
+}
