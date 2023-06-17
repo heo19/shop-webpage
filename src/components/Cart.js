@@ -40,10 +40,12 @@ function Cart() {
 
     return (
         <div>
-            <SucessAlert
-                isSucess = {isSucess}
-            ></SucessAlert>
+            
             <div className="mainContentCart">
+                <SucessAlert
+                    isSucess = {isSucess}
+                ></SucessAlert>
+
                 <h2 className="cartTitle">
                     Items In Your Cart
                 </h2>
