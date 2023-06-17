@@ -16,20 +16,20 @@ function App() {
     <div className="App">
       <Navbar bg="light" variant="light">
         <Container>
-          <Navbar.Brand><Link to="/" className="topLogo">STORE</Link></Navbar.Brand>
+          <Navbar.Brand><Link to="/shop-webpage/" className="topLogo">STORE</Link></Navbar.Brand>
           <Nav className="me-auto">
-            <Link to="/" className='topButton'>Home</Link>
-            <Link to="/sale" className='topButton'>Sale</Link>
-            <Link to="/cart" className='topButton'>Cart</Link>
+            <Link to="/shop-webpage/" className='topButton'>Home</Link>
+            <Link to="/shop-webpage/sale" className='topButton'>Sale</Link>
+            <Link to="/shop-webpage/cart" className='topButton'>Cart</Link>
           </Nav>
         </Container>
       </Navbar>
 
       <Routes>
-        <Route path="/" element={<Home></Home>} />
-        <Route path="/sale" element={<Sale></Sale>} />
-        <Route path="/detail/:id" element={<Detail></Detail>} />
-        <Route path="/cart" element={<Cart></Cart>} />
+        <Route path="/shop-webpage/" element={<Home></Home>} />
+        <Route path="/shop-webpage/sale" element={<Sale></Sale>} />
+        <Route path="/shop-webpage/detail/:id" element={<Detail></Detail>} />
+        <Route path="/shop-webpage/cart" element={<Cart></Cart>} />
       </Routes>
 
 

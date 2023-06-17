@@ -134,7 +134,7 @@ function NoItemInCart(props) {
                 <Alert key='dark' variant='dark'>
                     There is No Item in the Cart!
                 </Alert>
-                <Link to="/sale"><Button variant="secondary" className="addMoreButtonNoCart">Add More Items</Button></Link>
+                <Link to="/shop-webpage/sale"><Button variant="secondary" className="addMoreButtonNoCart">Add More Items</Button></Link>
             </div>
 
         );
@@ -146,7 +146,8 @@ function NoItemInCart(props) {
                 </div>
                 <div className='orderNowButtonGroup'>
                     <Button variant="dark" className="orderNowButton" onClick={props.handleShow}>Order Now</Button>
-                    <Link to="/sale"><Button variant="secondary" className="addMoreButton">Add More Items</Button></Link>
+                    <Link to="/shop-webpage
+                    /sale"><Button variant="secondary" className="addMoreButton">Add More Items</Button></Link>
                 </div>
             </div>
 

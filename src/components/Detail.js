@@ -97,7 +97,7 @@ function Detail() {
                         </Card>
 
                         <Button variant="dark" className="orderButton" onClick={addItemToCart}>{addToCartText}</Button>
-                        <Link to="/cart">
+                        <Link to="/shop-webpage/cart">
                             <Button variant="secondary" className="orderButton">Go To My Cart</Button>
                         </Link>
                     </div>

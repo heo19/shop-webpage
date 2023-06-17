@@ -21,7 +21,7 @@ function Home() {
                             Get it now from the STORE.<br />
                         </p>
                         <br />
-                        <Link to="/detail/0"><Button variant="outline-dark" className="subSectionOneButton">Shop Now</Button></Link>
+                        <Link to="/shop-webpage/sale"><Button variant="outline-dark" className="subSectionOneButton">Shop Now</Button></Link>
                     </Col>
                 </Row>
             </Container>
@@ -38,7 +38,7 @@ function Home() {
                             Get it now AT STORE.<br />
                         </p>
                         <br />
-                        <Link to="/detail/2"><Button variant="outline-dark">Shop Now</Button></Link>
+                        <Link to="/shop-webpage/sale"><Button variant="outline-dark">Shop Now</Button></Link>
                     </Col>
                     <Col sm={8} className="subSectionTwoImg"></Col>
                 </Row>
@@ -57,7 +57,7 @@ function Home() {
                             Get this now At the STORE.<br />
                         </p>
                         <br />
-                        <Link to="/detail/3"><Button variant="outline-dark" className="subSectionThreeButton">Shop Now</Button></Link>
+                        <Link to="/shop-webpage/sale"><Button variant="outline-dark" className="subSectionThreeButton">Shop Now</Button></Link>
                     </Col>
                 </Row>
             </Container>
