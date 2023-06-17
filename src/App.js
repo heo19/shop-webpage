@@ -5,6 +5,7 @@ import Cart from './components/Cart'
 
 import { Routes, Route, Link } from 'react-router-dom'
 import { Navbar, Container, Nav } from "react-bootstrap"
+
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/detail/:id" element={<Detail></Detail>} />
         <Route path="/cart" element={<Cart></Cart>} />
       </Routes>
+
 
     </div>
   );
