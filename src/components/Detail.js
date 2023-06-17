@@ -63,7 +63,7 @@ function Detail() {
                 ></SucessAlert>
                 <div className="mainContent">
                     <div className="imageContainer">
-                        <Image src={itemInfo.img} fluid />
+                        <Image src={process.env.PUBLIC_URL + itemInfo.img} fluid />
                     </div>
 
                     <div className="infoContainer">
