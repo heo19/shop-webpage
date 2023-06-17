@@ -10,7 +10,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Accordion from 'react-bootstrap/Accordion';
 import itemData from './data.js'
 import Alert from 'react-bootstrap/Alert';
-
+import { Link } from 'react-router-dom'
 import { useDispatch } from "react-redux"
 import { addItem } from "./store.js"
 import { useParams } from 'react-router-dom'
@@ -19,7 +19,6 @@ function Detail() {
 
     let [size, setSize] = useState("Size");
     let [isAbleToOrder, setIsAbleToOrder] = useState(false);
-    let [orderNowText, setOrderNowText] = useState('Pick Your Size');
     let [addToCartText, setAddToCartText] = useState('Pick Your Size');
     let [tabStatus, setTabStatus] = useState(0);
     let [isSucess, setIsSucess] = useState(false);
@@ -31,7 +30,6 @@ function Detail() {
 
     useEffect(() => {
         if (size !== "Size") {
-            setOrderNowText("Order Now");
             setAddToCartText("Add To Cart");
             setIsAbleToOrder(true);
         }
@@ -98,9 +96,10 @@ function Detail() {
                             </Card.Body>
                         </Card>
 
-                        <Button variant="dark" className="orderButton">{orderNowText}</Button>
-                        <Button variant="secondary" className="orderButton" onClick={addItemToCart}>{addToCartText}</Button>
-
+                        <Button variant="dark" className="orderButton" onClick={addItemToCart}>{addToCartText}</Button>
+                        <Link to="/cart">
+                            <Button variant="secondary" className="orderButton">Go To My Cart</Button>
+                        </Link>
                     </div>
                 </div>
 

@@ -8,12 +8,13 @@ import { Link } from 'react-router-dom'
 import Accordion from 'react-bootstrap/Accordion';
 import Nav from 'react-bootstrap/Nav';
 import Alert from 'react-bootstrap/Alert';
-
+import OrderModal from './OrderModal.js';
 import './Cart.css'
 
 function Cart() {
     let cartData = useSelector((state) => state.cart);
     let [tabStatus, setTabStatus] = useState(0);
+    let [isSucess, setIsSucess] = useState(false);
 
     function getTotalPrice(){
         var totalPrice = 0;
@@ -24,9 +25,24 @@ function Cart() {
         return totalPrice;
     }
 
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    const orderSuccess = () => {
+        setIsSucess(true);
+
+        let timer1 = setTimeout(() => {
+            setIsSucess(false);
+            clearTimeout(timer1);
+        }, 3000);
+    }
+
     return (
         <div>
-            <div className="spacer" />
+            <SucessAlert
+                isSucess = {isSucess}
+            ></SucessAlert>
             <div className="mainContentCart">
                 <h2 className="cartTitle">
                     Items In Your Cart
@@ -58,7 +74,7 @@ function Cart() {
                         })}
                     </tbody>
                 </Table>
-                <NoItemInCart arrayLength={cartData.length} totalPrice={getTotalPrice()}></NoItemInCart>
+                <NoItemInCart arrayLength={cartData.length} totalPrice={getTotalPrice()} handleShow={handleShow}></NoItemInCart>
                 <div className="infoTab">
                     <Nav fill variant="tabs" defaultActiveKey="tab0">
                         <Nav.Item>
@@ -71,7 +87,14 @@ function Cart() {
                     <TabContent tab={tabStatus}></TabContent>
                 </div>
             </div>
-            <br />
+            <br/>
+            <OrderModal
+                show = {show}
+                orderItem = {cartData}
+                handleClose = {handleClose}
+                orderSuccess = {orderSuccess}
+                totalPrice = {getTotalPrice()}
+            ></OrderModal>
         </div>
     )
 }
@@ -122,7 +145,7 @@ function NoItemInCart(props) {
                     <p className = 'totalPrice'>Total Price: ${props.totalPrice}</p>
                 </div>
                 <div className='orderNowButtonGroup'>
-                    <Button variant="dark" className="orderNowButton">Order Now</Button>
+                    <Button variant="dark" className="orderNowButton" onClick={props.handleShow}>Order Now</Button>
                     <Link to="/sale"><Button variant="secondary" className="addMoreButton">Add More Items</Button></Link>
                 </div>
             </div>
@@ -171,4 +194,19 @@ function TabContent(props) {
         );
     }
 }
+
+function SucessAlert(props) {
+    if(props.isSucess) {
+        return (
+            <Alert key='success' variant='success' className='alertTop'>
+                Your Order Have Successfully Delivered!
+            </Alert>
+        );
+    } else {
+        return (
+            <div className="spacer" />
+        );
+    }
+}
+
 export default Cart

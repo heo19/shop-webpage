@@ -60,7 +60,56 @@ let itemData = [
       img: "/images/shoe8AdidasSlide.png",
       title : "Adidas Slide",
       price : 39
-    }
+    },
+
+    {
+      id : 9,
+      img: "/images/Converse70VintageCanvas.jpg",
+      title : "70 Vintage Canvas",
+      price : 129
+    },
+  
+    {
+      id : 10,
+      img: "/images/ConverseChunkTaylorClassic.jpg",
+      title : "Chunk Taylor Classic",
+      price : 99
+    },
+
+    {
+      id : 11,
+      img: "/images/NikeAirJordan13.jpg",
+      title : "Air Jordan 13",
+      price : 49
+    },
+
+    {
+      id : 12,
+      img: "/images/NikeAirMax.jpg",
+      title : "Air Max",
+      price : 69
+    },
+  
+    {
+      id : 13,
+      img: "/images/NikeAirForce1.jpg",
+      title : "Air Force 1",
+      price : 109
+    },
+
+    {
+      id : 14,
+      img: "/images/NikeDunkHighRetro.jpg",
+      title : "Dunk High Retro",
+      price : 89
+    },
+  
+    {
+      id : 15,
+      img: "/images/NikeKillshot2Lether.jpg",
+      title : "Killshor 2 Lether",
+      price : 59
+    },
   ]
 
   export default itemData;
